@@ -49,6 +49,7 @@ def generate_md(repos: list) -> str:
         md += '\n' + CARD_TEMPLATE.format(repo['avatar'], repo['author'], repo['full_name'],
                                           repo['stars'], repo['forks'], repo['repo_url'], repo['description'])
 
+    md += "\n (Obs: Esse conteudo e feito por um BOT, se quer saber mais veja esse [post](https://www.tabnews.com.br/iorjunior/construindo-um-bot-para-o-tabnews-part-1))"
     return md
 
 
